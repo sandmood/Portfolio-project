@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animal Rescue</title>
+    <style>
+      div {
+        margin: 0 auto;
+        padding: 15px;
+        width: 70%;
+        border-radius: 15px;
+      }
+      h1 {
+        display: block;
+        margin: 15px 50px 15px 50px;
+        padding: 10px;
+        border: 1px solid #f26522;
+        border-radius: 4px;
+      }
+      h2 {
+        font-weight: bolder;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+        border-radius: 15px;
+        width: 87%;
+      }
+      hr {
+        margin: 0 50px;
+      }
+      p {
+        margin: 10px 45px 10px 45px;
+        font-size: 18px;
+        text-align: left;
+      }
+      a {
+        text-align: center;
+        padding: 20px;
+      }
+      button {
+        display: block;
+        background: #f98484;
+        font-size: 24px;
+        border: none;
+        border-radius: 10px;
+        margin: 0 auto;
+        padding: 10px 20px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        line-height: 40px;
+        opacity: 0.8;
+        transition: all 150ms ease-in-out;
+      }
+      button:hover {
+        background: #f7b0a8;
+        color: white;
+        border: 1px solid white;
+      }
+      .colors {
+        color: #f26522;
+        font-weight: bold;
+      }
+      .how-adopt {
+        color: #f26522;
+        font-size: 24px;
+        font-weight: bold;
+        display: block;
+        text-decoration: none;
+        padding: 0;
+      }
+      .screen {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(255, 252, 214) 0%,
+          rgba(255, 102, 102, 0.44) 90%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="screen">
+        <h1>I love Pets!</h1>
+        <h2>Adopted pets - the best friends 😻</h2>
+        <hr />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/040/524/original/how-you-can-help_adoptions-tips_main-image-dog.jpeg?1657890722"
+        />
+        <hr />
+        <p>
+          <span class="colors">Caring for a companion animal</span>
+          goes far beyond providing food, water and shelter. It takes research
+          and careful planning to bring the right pet into your home, and to
+          make sure your lifestyle is the right one for your pet. Read on for
+          tips to prepare yourself, as well as your home, for a new furry
+          friend.
+        </p>
+        <p>
+          <strong>Are You Ready to Adopt?</strong>
+        </p>
+        <p>
+          <span class="colors">When adopting, you are making a commitment</span>
+          to care for an animal for the rest of his life—that could mean 10 to
+          15 years for dogs and up to 20 years for cats. As you go through
+          lifestyle changes such as moves, the birth of children and new jobs,
+          your animal will remain a permanent part of your life. If
+          circumstances change,
+          <em>will you still be able to care for your pet?</em>
+        </p>
+        <p>
+          <a
+            href="https://www.aspca.org/adopt-pet/adoption-tips"
+            target="_blank"
+            class="how-adopt"
+          >
+            How to adopt
+          </a>
+        </p>
+        <br />
+        <button class="get-button">Get your pet! 🐕‍🦺🐈</button>
+      </div>
+    </div>
+    <script>
+      function welcome() {
+        let name = prompt("What is your name?");
+        let age = prompt("What is your age?");
+        let h1 = document.querySelector("h1");
+        if (age >= 18) {
+          h1.innerHTML = "Congrats, " + name + "! You can adopt your friend!";
+        } else {
+          h1.innerHTML =
+            "Sorry, " +
+            name +
+            "! Your friend will be waiting for you next time!";
+        }
+      }
+      let nameButton = document.querySelector("button");
+      nameButton.addEventListener("click", welcome);
+    </script>
+  </body>
+</html>

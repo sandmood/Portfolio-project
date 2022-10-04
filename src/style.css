@@ -1,11 +1,11 @@
 :root {
   --branding-color: #6c63ff;
   --secondary-color: #f9f7fe;
-  --heading-font-family: "Playfair Display", serif;
+  --heading-font-family: "Montserrat", serif;
   --default-font-family: "Poppins", sans-serif;
+   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-h1,
 h2,
 h3,
 h4,
@@ -14,7 +14,7 @@ h6 {
   color: black;
   font-family: var(--heading-font-family);
   font-weight: bold;
-}
+} 
 
 h1 {
   color: black;
@@ -68,7 +68,48 @@ p {
 .project-description {
     padding: 120px 60px;
 }
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+a {
+  color: black;
+  text decoration: none;
+}
+a:hover {
+  color: var(--branding-color);
+  text-decoration: underline;
+}
+
+.email:visited {
+  color: var(--branding-color);
+}
+.about-paragraphs {
+  display: flex;
+  margin: 30px 0;
+}
+
+.about-paragraphs p {
+  margin: 10px;
+}
+
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 900px) {
+   
     h1 {
         font-size: 44px;
         line-height: 2;
@@ -83,4 +124,32 @@ p {
     .hero {
         padding: 80px 20px;
     }
+}
+
+@media (max-width: 576px) {
+  body {
+    text-align: center !important;
+    margin-bottom: 50px;
+  }
+   h1 {
+        font-size: 44px;
+        line-height: 2;
+    }
+    h2 {
+        font-size: 44px;
+    }
+    .project-description {
+        padding: 0;
+        text-align: center;
+    }
+    .hero {
+        padding: 80px 20px;
+    }
+     .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+     img {
+    display: none;
+  }
 }
