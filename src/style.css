@@ -37,14 +37,14 @@ p {
   padding: 160px 20px;
 }
 .hero p {
-  font-family: var(--heading-font-family)
+  font-family: var(--heading-font-family);
   font-size: 36px;
   font-weight: bold;
   margin: 0;
   color: #272142;
 }
 .hero h2 {
-  font-family: var(--default-font-family)
+  font-family: var(--default-font-family);
   font-weight: normal;
   font-size: 24px;
   line-height: 1.5;
@@ -77,7 +77,7 @@ p {
 }
 a {
   color: black;
-  text decoration: none;
+  text-decoration: none;
 }
 a:hover {
   color: var(--branding-color);
