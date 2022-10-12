@@ -3,7 +3,7 @@
   --secondary-color: #f9f7fe;
   --heading-font-family: "Montserrat", serif;
   --default-font-family: "Poppins", sans-serif;
-   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 h2,
@@ -14,7 +14,7 @@ h6 {
   color: black;
   font-family: var(--heading-font-family);
   font-weight: bold;
-} 
+}
 
 h1 {
   color: black;
@@ -23,7 +23,7 @@ h1 {
   font-weight: bold;
 }
 h2 {
-    font-size: 46px;
+  font-size: 46px;
 }
 p {
   font-family: var(--default-font-family);
@@ -58,22 +58,22 @@ p {
   padding: 15px 30px;
 }
 .btn-branding-outline {
-    color: var(--branding-color);
-    border: 1px solid var(--branding-color);
-    border-radius: 4px;
-    font-size: 18px;
-    line-height: 27px;
-    padding: 15px 30px;
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
 }
 .project-description {
-    padding: 120px 60px;
+  padding: 120px 60px;
 }
 .social-media {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
 }
 a {
   color: black;
@@ -107,23 +107,44 @@ a:hover {
 .email-link:hover {
   text-decoration: underline;
 }
+.about-section {
+  padding: 100px 20px;
+  text-align: center;
+}
+.about-section h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+.about-section h2 {
+  font-size: 18px;
+  font-family: var(--default-font-family);
+}
+
+.about-section-content {
+  margin: 30px;
+}
+
 
 @media (max-width: 900px) {
-   
-    h1 {
-        font-size: 44px;
-        line-height: 2;
-    }
-    h2 {
-        font-size: 44px;
-    }
-    .project-description {
-        padding: 0;
-        text-align: center;
-    }
-    .hero {
-        padding: 80px 20px;
-    }
+  h1 {
+    font-size: 44px;
+    line-height: 2;
+  }
+  h2 {
+    font-size: 44px;
+  }
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
+  .hero {
+    padding: 80px 20px;
+  }
+  .about-section {
+    text-align: center;
+    padding: 0;
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -131,25 +152,30 @@ a:hover {
     text-align: center !important;
     margin-bottom: 50px;
   }
-   h1 {
-        font-size: 44px;
-        line-height: 2;
-    }
-    h2 {
-        font-size: 44px;
-    }
-    .project-description {
-        padding: 0;
-        text-align: center;
-    }
-    .hero {
-        padding: 80px 20px;
-    }
-     .row {
+  h1 {
+    font-size: 44px;
+    line-height: 2;
+  }
+  h2 {
+    font-size: 44px;
+  }
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
+  .hero {
+    padding: 80px 20px;
+  }
+  .container {
     display: flex;
     flex-wrap: wrap;
   }
-     img {
-    display: none;
+  .about-section {
+    text-align: center;
+    padding: 0;
+    margin-top: 30px;
+  }
+  img {
+    display: 80%;
   }
 }
