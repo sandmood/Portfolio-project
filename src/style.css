@@ -123,6 +123,31 @@ a:hover {
 .about-section-content {
   margin: 30px;
 }
+.project-section {
+  text-align: center;
+  margin: 80px 0 0 60px;
+  padding: 20px;
+}
+.project-section h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+.project-section h2 {
+  font-size: 18px;
+  font-family: var(--default-font-family);
+}
+.project-content h3 {
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 20px 0 0;
+    font-family: var(--default-font-family);
+}
+.project-content p {
+    font-size: 14px;
+}
+.project-content {
+  margin: 30px;
+}
 
 
 @media (max-width: 900px) {
@@ -145,19 +170,25 @@ a:hover {
     padding: 0;
     margin-top: 30px;
   }
+  .project-section {
+    text-align: center;
+    padding: 0;
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 576px) {
   body {
     text-align: center !important;
+    margin-top: 50px;
     margin-bottom: 50px;
   }
   h1 {
-    font-size: 44px;
+    font-size: 40px;
     line-height: 2;
   }
   h2 {
-    font-size: 44px;
+    font-size: 34px;
   }
   .project-description {
     padding: 0;
@@ -171,6 +202,11 @@ a:hover {
     flex-wrap: wrap;
   }
   .about-section {
+    text-align: center;
+    padding: 0;
+    margin-top: 30px;
+  }
+   .project-section {
     text-align: center;
     padding: 0;
     margin-top: 30px;
