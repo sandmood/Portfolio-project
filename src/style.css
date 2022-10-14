@@ -158,9 +158,100 @@ a:hover {
   flex-direction: row;
   justify-content: space-between;
 }
+.contact-section {
+  text-align: center;
+  margin-top: 80px;
+  padding: 20px;
+}
+.contact-section h1 {
+  font-size: 60px;
+  line-height: 80px;
+}
 .navbar {
   background: var(--secondary-color) !important;
 }
+.contact-img {
+  color: var(--branding-color);
+}
+
+/*about.html*/
+.work {
+}
+.position {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.organization {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--branding-color);
+}
+.period {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #a8a8a8;
+  margin-bottom: 10px;
+}
+.line {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+.worklist {
+  padding: 0;
+  margin-left: 15px;
+}
+.worklist-item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+}
+
+/* education styles */
+.education {
+  margin-top: 40px;
+}
+
+.faculty {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.companies,
+.education {
+  text-align: left;
+  display: flexbox;
+}
+.work-experience {
+  background-color: var(--secondary-color);
+  padding: 40px 20px 20px 40px;
+}
+.tech-skills-item,
+.soft-skills-item {
+  color: var(--branding-color);
+}
+.tech-skills-text,
+.soft-skills-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
 
 @media (max-width: 900px) {
   h1 {
@@ -190,6 +281,7 @@ a:hover {
   .project-section h1 {
   font-size: 44px;
   line-height: 1.5;
+}
 }
 
 @media (max-width: 576px) {

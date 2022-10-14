@@ -31,7 +31,7 @@
     <title>Front-end developer Maria Montyeva</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light fixed-top ps-5">
+   <nav class="navbar navbar-expand-lg bg-light fixed-top ps-5">
       <div class="container-fluid">
         <button
           class="navbar-toggler"
@@ -62,70 +62,82 @@
         </div>
       </div>
     </nav>
-    <div class="hero">
-      <p class="text-center fs-1 mb-4">🤝Hello! I am</p>
-      <h1 class="mb-4">Maria Montyeva</h1>
-      <h2 class="mb-5 text-secondary">🇺🇦 Front-end developer, based in Kyiv, Ukraine</h2>
-      <div><a href="#" class="btn btn-branding">Contact me</a>
-      </div>
-    </div>
-    <p class="text-center m-5">
-      Featured Project which my best projects be choice to show
-    </p>
+    <div class="contact-section">
+    <h1>Let's get in touch!</h1>
     <div class="container">
-      <div class="row mb-5">
-        <div class="col-md-6 d-none d-lg-block">
-          <img src="img/pets.png" alt="" class="img-fluid rounded-2" />
-        </div>
-        <div class="col-md-6">
-          <div class="project-description">
-            <h2 class="mb-5">Pets App</h2>
-            <p class="mb-5 text-meted">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at the coast of the Semantics, a
-              large language ocean. A small river named Duden flows by
-            </p>
-            <a href="/landing-page.html" class="btn btn-branding-outline"> View project </a>
+      <div class="row">
+          <div class="col-md-4 text-center">
+            <span class="contact-img"><i class="fas fa-phone mt-4 fa-2x"></i></span>
+              <p><a href="tel:+380502027951">+380 50 2027951</a></p>
           </div>
-        </div>
-      </div>
-      <div class="row mb-5">
-        <div class="col-md-6">
-          <div class="project-description">
-            <h2 class="mb-5">Weather App</h2>
-            <p class="mb-5 text-meted">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at the coast of the Semantics, a
-              large language ocean. A small river named Duden flows by
-            </p>
-            <a href="https://weather-sandmood.netlify.app/" class="btn btn-branding-outline"> View project </a>
+            <div class="col-md-4 text-center">
+              <span class="contact-img"><i class="fas fa-envelope mt-4 fa-2x"></i></span>
+              <p><a href="mailto:m.montieva@gmail.com">m.montieva@gmail.com</a></p>
+              </div>
+               <div class="col-md-4 text-center">
+              <span class="contact-img"><i class="fa-solid fa-location-dot mt-4 fa-2x"></i></span>
+              <p><a href="https://goo.gl/maps/gMZ1oD3waQFx8Nij6">Kyiv, 03150, Ukraine</a></p>
+            </div>
           </div>
+              </div>
+    <!--Section: Contact v.2-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact me</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact me directly.</p>
+    
+
+        <div class="container">
+        <div class="row justify-content-center">
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="https://getform.io/f/4ad5a63c-1333-4d01-bfb1-b54f3a630864" method="POST">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-4">
+                            <input type="text" id="name" name="name" placeholder="Name" class="form-control">
+                        </div>
+                    </div>
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-4">
+                            <input type="text" id="email" name="email" placeholder="Email" class="form-control">
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+    
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form mb-4">
+                            <textarea type="text" id="message" name="message" placeholder="Type your message" rows="2" class="form-control md-textarea"></textarea>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-branding-outline" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+            <div class="status"></div>
         </div>
-        <div class="col-md-6 d-none d-lg-block">
-          <img src="img/weather.png" alt="" class="img-fluid rounded-2" />
-        </div>
-      </div>
-      <div class="row mb-5">
-        <div class="col-md-6 d-none d-lg-block">
-          <img src="img/croissant.png" alt="" class="img-fluid rounded-2" />
-        </div>
-        <div class="col-md-6">
-          <div class="project-description">
-            <h2 class="mb-5">Croissant App</h2>
-            <p class="mb-5 text-meted">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at the coast of the Semantics, a
-              large language ocean. A small river named Duden flows by
-            </p>
-            <a href="https://croissant-sandmood.netlify.app/" class="btn btn-branding-outline"> View project </a>
-          </div>
-        </div>
-        </div>
-        </div>
-        <footer>
+    </div>
+<!--Section: Contact v.2-->
+</div>
+</div>
+     <footer>
         <div class="social-media">
               <div>
                <a href="https://www.facebook.com/maria.montyeva"><i class="fa-brands fa-facebook fa-2xl"></i></a>
@@ -135,7 +147,6 @@
               </div>
                <div>
                <a href=" https://www.linkedin.com/in/maria-montyeva-b4243595/"><i class="fa-brands fa-linkedin-in fa-2xl"></i></a>
-              </div>
               </div>
               </footer>
   </body>
