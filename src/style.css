@@ -84,11 +84,11 @@ p {
   text-align: center;
 }
 a {
-  color: black;
+  color: var(--branding-color);
   text-decoration: none;
 }
 a:hover {
-  color: var(--branding-color);
+  color: black;
   text-decoration: underline;
 }
 
