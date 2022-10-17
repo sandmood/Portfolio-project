@@ -10,6 +10,7 @@
   max-width: 50px;
 }
 .active {
+    color: var(--branding-color);
 }
 .btn-branding {
   background: var(--branding-color);
